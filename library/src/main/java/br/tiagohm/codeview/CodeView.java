@@ -407,7 +407,7 @@ public class CodeView extends WebView {
             lineCount++;
         }
 
-        return "<table rules="none">\n" + sb.toString().trim() + "</table>\n";
+        return "<table rules=\"none\">\n" + sb.toString().trim() + "</table>\n";
     }
 
     /**
