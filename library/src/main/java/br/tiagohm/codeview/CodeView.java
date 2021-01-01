@@ -333,7 +333,7 @@ public class CodeView extends WebView {
         sb.append("margin: 0px; padding: 0px;");
         sb.append("}\n");
         sb.append("code > span { display: none; }");
-        sb.append("td.ln { text-align: right; padding-right: 2px; }");
+        sb.append("td.ln { text-align: right; padding-right: 0px; }");
         sb.append("td.line:hover span {background: #A6D2FF; color: #fff;}");
         sb.append("td.line:hover {background: #A6D2FF; color: #fff; border-radius: 2px;}");
         sb.append("td.destacado {background: #ffda11; color: #000; border-radius: 2px;}");
