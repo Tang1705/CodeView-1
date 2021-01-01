@@ -398,7 +398,7 @@ public class CodeView extends WebView {
         while (m.find()) {
             m.appendReplacement(sb,
                     String.format(Locale.ENGLISH,
-                            "<tr><td line='%d' class='hljs-number ln'></td><td line='%d' onclick='android.onLineClicked(%d, this.textContent);' class='line'>$1 </td></tr>&#10;",
+                            "<tr><td line='%d' class='line-number ln'></td><td line='%d' onclick='android.onLineClicked(%d, this.textContent);' class='line'>$1 </td></tr>&#10;",
                             pos, pos, pos));
             pos++;
             lineCount++;
