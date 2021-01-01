@@ -18,6 +18,8 @@ import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import android.util.Log;
+
 public class CodeView extends WebView {
 
     public interface OnHighlightListener {
@@ -348,6 +350,7 @@ public class CodeView extends WebView {
         sb.append("<pre><code class='").append(language.getLanguageName()).append("'>")
                 .append(insertLineNumber(escapeCode))
                 .append("</code></pre>\n");
+        Log.d("html",sb.toString);
         return sb.toString();
     }
 
@@ -404,7 +407,7 @@ public class CodeView extends WebView {
             lineCount++;
         }
 
-        return "<table>\n" + sb.toString().trim() + "</table>\n";
+        return "<table rules="none">\n" + sb.toString().trim() + "</table>\n";
     }
 
     /**
